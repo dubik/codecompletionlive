@@ -1,0 +1,29 @@
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin>
+    <name>CodeCompletionLive</name>
+    <description>CodeCompletionLive cycles through several completions. By default it is binded to Ctrl-Shift-Alt-U but
+        it's better to rebind it to for example Ctrl-Space. To do that open Keymap from Settings, under
+        Plug-ins - CodeCompletionLive you will see one action CodeCompletionLiveAction, bind it to a new shortcut.
+
+        First it checks Smart Code Completion
+        (Ctrl-Shift-Space) if no suggestion available it checks Basic Code Completion (Ctrl-Space) if still IDEA could
+        find anything it triggers Class Name Completion (Ctrl-Alt-Space).
+    </description>
+    <change-notes>
+        <![CDATA[
+        <ul>
+            <u><b>Version 0.2 changes</b></u>
+            <li>Recompiled with 1.5 JDK</li>
+        </ul>
+        ]]>
+    </change-notes>
+    <version>0.2</version>
+    <vendor>Sergiy Dubovik</vendor>
+    <idea-version since-build="4267"/>
+    <actions>
+        <action id="CodeCompletionLiveAction" class="org.dubik.codecompletionlive.actions.CodeCompletionLiveAction"
+                text="Code Completion Live Action">
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt U"/>
+        </action>
+    </actions>
+</idea-plugin>
