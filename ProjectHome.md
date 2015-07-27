@@ -1,0 +1,3 @@
+CodeCompletionLive cycles through several completions. By default it is binded to Ctrl-Shift-Alt-U but it's better to rebind it to for example Ctrl-Space. To do that open Keymap from Settings, under Plug-ins - CodeCompletionLive you will see one action CodeCompletionLiveAction, bind it to a new shortcut.
+
+First it checks Smart Code Completion (Ctrl-Shift-Space) if no suggestion available it checks Basic Code Completion (Ctrl-Space) if still IDEA could find anything it triggers Class Name Completion (Ctrl-Alt-Space).
